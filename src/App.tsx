@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react';
+import React from 'react';
 import svg from './assets/20_airtransportation.svg';
 import {Box, Button, Card, Grid} from "@material-ui/core";
 import useAirplans from "./store/airplans";
