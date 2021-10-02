@@ -6,7 +6,12 @@ interface Airplan {
     angle: number;
 }
 
-const useAirplans = create<{ airplans: Airplan[], addAirplan: (airplan: Airplan) => void }>(set => ({
+interface Store {
+    airplans: Airplan[],
+    addAirplan: (airplan: Airplan) => void
+}
+
+const useAirplans = create<Store>(set => ({
     airplans: [
         {
             angle: 350,
